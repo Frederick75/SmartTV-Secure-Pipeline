@@ -1,0 +1,5 @@
+config RDMA_STUB_SCAFFOLD
+    tristate "RDMA-style dma-buf memcpy via DMAengine (scaffold)"
+    depends on DMA_ENGINE && DMA_SHARED_BUFFER
+    help
+      Demo RDMA-style copy using DMAengine between dma-buf buffers.

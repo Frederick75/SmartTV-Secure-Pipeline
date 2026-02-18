@@ -1,0 +1,45 @@
+
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    rect {{ fill:#f2f6ff; stroke:#2a4cff; stroke-width:2; }}
+    text {{ font-family:Arial; font-size:14px; }}
+  </style>
+
+  <!-- Userspace -->
+  <rect x="50" y="50" width="250" height="120"/>
+  <text x="70" y="80">Userspace</text>
+  <text x="70" y="105">NRDP / CDM</text>
+  <text x="70" y="125">Video Player</text>
+  <text x="70" y="145">OpenGL Renderer</text>
+
+  <!-- Kernel -->
+  <rect x="350" y="50" width="250" height="180"/>
+  <text x="370" y="80">Linux Kernel</text>
+  <text x="370" y="105">SVP Driver</text>
+  <text x="370" y="125">DMA‑HEAP</text>
+  <text x="370" y="145">RDMA DMAengine</text>
+  <text x="370" y="165">DRM/KMS</text>
+
+  <!-- TEE -->
+  <rect x="650" y="50" width="200" height="120"/>
+  <text x="670" y="80">OP‑TEE</text>
+  <text x="670" y="105">Trusted App</text>
+  <text x="670" y="125">Key Manager</text>
+
+  <!-- GPU -->
+  <rect x="350" y="280" width="250" height="120"/>
+  <text x="370" y="310">GPU</text>
+  <text x="370" y="335">Secure Rendering</text>
+
+  <!-- Display -->
+  <rect x="650" y="280" width="200" height="120"/>
+  <text x="670" y="310">Display</text>
+  <text x="670" y="335">DRM/KMS Output</text>
+
+  <!-- Arrows -->
+  <line x1="300" y1="100" x2="350" y2="100" stroke="black"/>
+  <line x1="600" y1="100" x2="650" y2="100" stroke="black"/>
+  <line x1="475" y1="230" x2="475" y2="280" stroke="black"/>
+  <line x1="600" y1="340" x2="650" y2="340" stroke="black"/>
+
+</svg>

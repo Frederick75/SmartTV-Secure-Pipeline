@@ -1,0 +1,5 @@
+config SVP_SCAFFOLD
+    tristate "Secure Video Path (SVP) scaffold (DMA-HEAP)"
+    depends on DMA_SHARED_BUFFER && DMA_HEAPS
+    help
+      Demo SVP driver that allocates from DMA-HEAP (secure heap) and exports dma-buf fds.

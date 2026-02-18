@@ -1,0 +1,4 @@
+menu "smarttv-secure-pipeline"
+source "kernel/secure_video/Kconfig"
+source "kernel/rdma_stub/Kconfig"
+endmenu

@@ -1,0 +1,15 @@
+name: build
+on: [push, pull_request]
+jobs:
+  userspace:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake pkg-config libdrm-dev libgbm-dev libegl1-mesa-dev libgles2-mesa-dev libteec-dev || true
+      - name: Build userspace
+        run: |
+          cmake -S user -B build-user -DCMAKE_BUILD_TYPE=Release
+          cmake --build build-user -j
